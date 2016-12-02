@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="/images/1moto.png" type="image/png">
+        <title>BikerBoyz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        
+         body {
+                background-color: black;
+                background-image: url(images/background_signup.jpg); 
+                background-position: center;
+                -moz-background-size: 100%; 
+                -webkit-background-size: 100%; 
+                -o-background-size: 100%; 
+                background-size: 100%; 
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                
+            }
+        </style>
+    </head>
+    <body>
+            <center><form class="modal" method="post" action="sendUpData.php">
+               
+            <p><b>Input username:</b><br>
+                <input type="text" name="username" size="40">
+            </p>
+            <p><b>Input password:</b><br>
+               <input type="password" name="password" size="40">
+            </p>
+            <p><b>Repeat password:</b><br>
+                <input type="password" name="checkPassword" size="40">
+             </p>
+            <p><b>E-mail:</b><br>
+                <input type="email" name="email" size="40">
+            </p>
+            <p><b>Phone number:</b><br>
+               <input type="tel" size="40">
+            </p>
+           
+            <p>
+                <input type="submit" name="submit" value="Ok">
+                <input type="button" value="To main" onclick="location.href = 'index.html'">
+                <input type="reset" value="Delete">
+            </p>
+            </form></center>
+    </body>
+</html>

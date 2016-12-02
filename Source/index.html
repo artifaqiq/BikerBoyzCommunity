@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="/images/1moto.png" type="image/png">
+        <title>BikerBoyz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .modal{
+                 padding: 50px;
+                 position: fixed; top: 73%; left: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+            }
+            .dal{
+                 padding: 50px;
+                 position: fixed; top: 98%; left: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+            }
+
+            body {
+                background-color: black;
+                background-image: url(images/background.jpg); 
+                background-position: center;
+                -moz-background-size: 100%; 
+                -webkit-background-size: 100%; 
+                -o-background-size: 100%; 
+                background-size: 100%; 
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                
+            }
+        </style>
+        <script>
+            function toSignUp() {
+                location.href = 'signup.html'
+            }
+        </script>
+    </head>
+    <body> 
+        
+    <center><form class="modal" method="post" action="sendInData.php">
+               
+            <p><b>Username</b><br>
+               <input type="text" name="username" size="40">
+            </p>
+            <p><b>Password</b><br>
+               <input type="password" name="password" size="40">
+               
+            </p>
+           
+            <p>
+                <input type="submit" name="submit" value="Sign in" >
+                <input type="button" value="Sign up" onclick = "toSignUp()">
+                <input type="reset" value="Delete">
+            </p>
+            </form></center>
+    <center><div class="dal"><a href="https://github.com/epats" target="_blank">Developer</a></div></center>
+    </body>
+</html>
